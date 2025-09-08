@@ -2,19 +2,19 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale-1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Tienda de Café - Inicio</title>
     <link rel="stylesheet" href="styles/app.css">
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href=""https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 <header class="header">
     <div class="logo">
-     <h1>TIENDA DE CAFÉ</h1>
+        <h1>TIENDA DE CAFÉ</h1>
     </div>  
     <nav class="nav">
         <ul>
@@ -28,36 +28,45 @@
         </ul>
     </nav>
 </header> 
+
 <main>
-    <!--Seccion principal con imagen destacada-->
+    <!-- Hero con imagen destacada -->
     <section class="hero">
         <div class="hero-content">
             <p>Tu Café, tu Momento</p>
             <h2>SIEMPRE CERCA</h2>
-            <p>Blends, varietales, cafés del mundo. </p> <br>Encontrá tu Tienda mas cercana y tentate con nuestros sabores.</br>
+            <p>Blends, varietales, cafés del mundo. <br>Encontrá tu Tienda más cercana y tentate con nuestros sabores.</p>
             <button id="encontranosBtn" class="button">ENCONTRANOS</button>
             <script src="button.js"></script>
         </div>
-        
-        <h2>Bienvenido a la Tienda de Cafe</h2>
-        <p>Descubri nuestros cafes de especialidad.</p>
-        <img src="img/Diseño sin título (3).jpg" alt="Taza de cafe">
     </section>
-    <!--Seccion de productos destacados-->
-    <section>
+
+    <!-- Sección de bienvenida -->
+    <section class="bienvenida">
+        <h2>Bienvenido a la Tienda de Café</h2>
+        <p>Descubrí nuestros cafés de especialidad.</p>
+        <img src="img/Diseño sin título (3).jpg" alt="Taza de café">
+    </section>
+
+    <!-- Sección de productos destacados -->
+    <section class="productos">
         <h2>Productos Destacados</h2>
-        <article>
-            <h3>Cafe en Granos</h3>
-            <p>Descripcion breve del producto.</p>
-        </article>
-        <article>
-            <h3>Capsulas</h3>
-            <p>Descripcion breve del producto.</p>
-        </article>
+        <div class="grid-productos">
+            <article>
+                <h3>Café en Granos</h3>
+                <p>Descripción breve del producto.</p>
+            </article>
+            <article>
+                <h3>Cápsulas</h3>
+                <p>Descripción breve del producto.</p>
+            </article>
+            <!-- Podés agregar más productos -->
+        </div>
     </section>
 </main> 
-<footer>
-    <p>&copy; 2025 Tienda de Cafe</p>
+
+<footer class="footer">
+    <p>© 2025 Tienda de Café - Todos los derechos reservados</p>
 </footer> 
 </body>
 </html>
