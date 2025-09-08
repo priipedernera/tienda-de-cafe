@@ -2,24 +2,43 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Tienda de Cafe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale-1.0, user-scalable=no">
+    <title>Tienda de Café - Inicio</title>
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href=""https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<header>
-    <h1>Tienda de Cafe</h1>
-    <nav>
+<header class="header">
+    <div class="logo">
+     <h1>TIENDA DE CAFÉ</h1>
+    </div>  
+    <nav class="nav">
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Tienda Online</a></li>
-            <li><a href="#">Contactos</a></li>
+            <li><a href="https://tiendadecafe.com.ar/tienda">NUESTRO CAFÉ</a></li>
+            <li><a href="https://tiendadecafe.com.ar/tutoriales">TUTORIALES</a></li>
+            <li><a href="https://tiendadecafe.com.ar/locales">LOCALES</a></li>
+            <li><a href="https://tiendadecafe.com.ar/menu-tienda">NUESTRO MENÚ</a></li>
+            <li><a href="https://tiendadecafe.com.ar/franquicias">FRANQUICIAS</a></li>
+            <li><a href="https://tiendadecafe.com.ar/trabaja-en-tdo">TRABAJÁ CON NOSOTROS</a></li>
+            <li><a href="https://tiendadecafe.com.ar/contacto">CONTACTO</a></li>
         </ul>
     </nav>
 </header> 
 <main>
     <!--Seccion principal con imagen destacada-->
-    <section>
+    <section class="hero">
+        <div class="hero-content">
+            <p>Tu Café, tu Momento</p>
+            <h2>SIEMPRE CERCA</h2>
+            <p>Blends, varietales, cafés del mundo. </p> <br>Encontrá tu Tienda mas cercana y tentate con nuestros sabores.</br>
+            <button id="encontranosBtn" class="button">ENCONTRANOS</button>
+            <script src="button.js"></script>
+        </div>
+        
         <h2>Bienvenido a la Tienda de Cafe</h2>
         <p>Descubri nuestros cafes de especialidad.</p>
         <img src="img/Diseño sin título (3).jpg" alt="Taza de cafe">
