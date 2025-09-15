@@ -7,7 +7,7 @@ body {
     color: #333;
 }
 
-/* --------- HEADER --------- */
+
 .header {
     position: fixed;
     top: 0;
@@ -31,7 +31,7 @@ body {
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
-/* --------- NAV --------- */
+
 nav {
     padding: 10px;
 }
@@ -52,10 +52,10 @@ nav {
 }
 
 .nav a:hover {
-    color: #d9b6a3; /* tono café claro */
+    color: #d9b6a3; 
 }
 
-/* --------- HERO --------- */
+
 .hero {
     position: relative;
     height: 100vh;
@@ -81,7 +81,7 @@ nav {
     text-shadow: 0 2px 6px rgba(0,0,0,0.4);
 }
 
-/* --------- SECCIÓN BIENVENIDA --------- */
+
 .bienvenida {
     text-align: center;
     padding: 60px 20px;
@@ -104,7 +104,7 @@ nav {
     box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
-/* --------- PRODUCTOS --------- */
+
 .productos {
     padding: 60px 20px;
     text-align: center;
@@ -135,7 +135,7 @@ nav {
     box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
-/* --------- BOTONES --------- */
+
 button, .button {
     background-color: #6b4226;
     color: #fff;
@@ -152,7 +152,7 @@ button:hover, .button:hover {
     background-color: #8b5e3c;
 }
 
-/* --------- FOOTER --------- */
+
 .footer {
     background: #2a1a10;
     color: #fff;
@@ -161,7 +161,7 @@ button:hover, .button:hover {
     font-size: 0.9rem;
 }
 
-/* --------- RESPONSIVE --------- */
+
 @media (max-width: 600px) {
     .logo h1 {
         font-size: 1.2rem;
@@ -176,9 +176,9 @@ button:hover, .button:hover {
         font-size: 1rem;
     }
 }
-/* --------- SECCIÓN CONTACTO --------- */
+
 .contacto {
-    background: #fff8f2; /* tono suave café claro */
+    background: #fff8f2; 
     padding: 60px 20px;
     text-align: center;
 }
@@ -186,7 +186,7 @@ button:hover, .button:hover {
 .contacto h2 {
     font-size: 2rem;
     margin-bottom: 15px;
-    color: #6b4226; /* marrón oscuro */
+    color: #6b4226; 
 }
 
 .contacto p {
@@ -195,7 +195,7 @@ button:hover, .button:hover {
     font-size: 1.1rem;
 }
 
-/* Formulario */
+
 .contacto form {
     max-width: 500px;
     margin: 0 auto;
@@ -214,7 +214,7 @@ button:hover, .button:hover {
 .contacto input,
 .contacto textarea {
     padding: 12px 15px;
-    border: 2px solid #d9b6a3; /* tono café claro */
+    border: 2px solid #d9b6a3;
     border-radius: 8px;
     font-size: 1rem;
     outline: none;
@@ -223,11 +223,11 @@ button:hover, .button:hover {
 
 .contacto input:focus,
 .contacto textarea:focus {
-    border-color: #8b5e3c; /* tono café medio */
+    border-color: #8b5e3c; 
     box-shadow: 0 0 8px rgba(139,94,60,0.3);
 }
 
-/* Botón de envío */
+
 .contacto .button {
     align-self: center;
     padding: 12px 30px;
@@ -244,7 +244,7 @@ button:hover, .button:hover {
     transform: translateY(-2px);
 }
 
-/* Responsive para móvil */
+
 @media (max-width: 600px) {
     .contacto form {
         width: 100%;
