@@ -1,94 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Tienda de Café - Inicio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Tienda de Café - Inicio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<header class="header">
+  <header class="header">
     <div class="logo">
-        <h1>TIENDA DE CAFÉ</h1>
+      <h1>TIENDA DE CAFÉ</h1>
     </div>  
-    <nav class="nav">
-        <ul>
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="https://tiendadecafe.com.ar/tienda">NUESTRO CAFÉ</a></li>
-            <li><a href="https://tiendadecafe.com.ar/tutoriales">TUTORIALES</a></li>
-            <li><a href="https://tiendadecafe.com.ar/locales">LOCALES</a></li>
-            <li><a href="https://tiendadecafe.com.ar/menu-tienda">NUESTRO MENÚ</a></li>
-            <li><a href="https://tiendadecafe.com.ar/franquicias">FRANQUICIAS</a></li>
-            <li><a href="https://tiendadecafe.com.ar/trabaja-en-tdo">TRABAJÁ CON NOSOTROS</a></li>
-            <li><a href="https://tiendadecafe.com.ar/contacto">CONTACTO</a></li>
-        </ul>
-    </nav>
-</header> 
 
-<main>
+    <!-- 🔽 Botón menú hamburguesa -->
+    <button class="menu-toggle" aria-label="Abrir menú">
+      ☰
+    </button>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="https://tiendadecafe.com.ar/tienda">NUESTRO CAFÉ</a></li>
+        <li><a href="https://tiendadecafe.com.ar/tutoriales">TUTORIALES</a></li>
+        <li><a href="https://tiendadecafe.com.ar/locales">LOCALES</a></li>
+        <li><a href="https://tiendadecafe.com.ar/menu-tienda">NUESTRO MENÚ</a></li>
+        <li><a href="https://tiendadecafe.com.ar/franquicias">FRANQUICIAS</a></li>
+        <li><a href="https://tiendadecafe.com.ar/trabaja-en-tdo">TRABAJÁ CON NOSOTROS</a></li>
+        <li><a href="https://tiendadecafe.com.ar/contacto">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header> 
+
+  <main>
     <!-- Hero con imagen destacada -->
     <section class="hero">
-        <div class="hero-content">
-            <p>Tu Café, tu Momento</p>
-            <h2>SIEMPRE CERCA</h2>
-            <p>Blends, varietales, cafés del mundo. <br>Encontrá tu Tienda más cercana y tentate con nuestros sabores.</p>
-            <button id="encontranosBtn" class="button">ENCONTRANOS</button>
-            <script src="button.js"></script>
-        </div>
+      <div class="hero-content">
+        <p>Tu Café, tu Momento</p>
+        <h2>SIEMPRE CERCA</h2>
+        <p>Blends, varietales, cafés del mundo. <br>Encontrá tu Tienda más cercana y tentate con nuestros sabores.</p>
+        <button id="encontranosBtn" class="button">ENCONTRANOS</button>
+        <script src="button.js"></script>
+      </div>
     </section>
 
     <!-- Sección de bienvenida -->
     <section class="bienvenida">
-        <h2>Bienvenido a la Tienda de Café</h2>
-        <p>Descubrí nuestros cafés de especialidad.</p>
-        <img src="img/diseño-sin-titulo-3.jpg" alt="Taza de café">
+      <h2>Bienvenido a la Tienda de Café</h2>
+      <p>Descubrí nuestros cafés de especialidad.</p>
+      <img src="img/diseño-sin-titulo-3.jpg" alt="Taza de café">
     </section>
 
     <!-- Sección de productos destacados -->
     <section class="productos">
-        <h2>Productos Destacados</h2>
-        <div class="grid-productos">
-            <article>
-                <h3>Café en Granos</h3>
-                <p>Descripción breve del producto.</p>
-            </article>
-            <article>
-                <h3>Cápsulas</h3>
-                <p>Descripción breve del producto.</p>
-            </article>
-        </div>
+      <h2>Productos Destacados</h2>
+      <div class="grid-productos">
+        <article>
+          <h3>Café en Granos</h3>
+          <p>Descripción breve del producto.</p>
+        </article>
+        <article>
+          <h3>Cápsulas</h3>
+          <p>Descripción breve del producto.</p>
+        </article>
+      </div>
     </section>
 
     <!-- Sección de contacto / formulario -->
     <section class="contacto">
-        <h2>Contacto</h2>
-        <p>Envianos tu mensaje y te responderemos pronto.</p>
-        <form action="#" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+      <h2>Contacto</h2>
+      <p>Envianos tu mensaje y te responderemos pronto.</p>
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-            <button type="submit" class="button">ENVIAR</button>
-        </form>
+        <button type="submit" class="button">ENVIAR</button>
+      </form>
     </section>
-</main> 
+  </main> 
 
-<footer class="footer">
+  <footer class="footer">
     <p>© 2025 Tienda de Café - Todos los derechos reservados</p>
     <div class="redes">
-        <a href="https://www.instagram.com" target="_blank">Instagram</a> |
-        <a href="https://www.facebook.com" target="_blank">Facebook</a> |
-        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+      <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+      <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+      <a href="https://www.twitter.com" target="_blank">Twitter</a>
     </div>
-</footer> 
+  </footer> 
+
+  <!-- Script para el menú -->
+  <script>
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+
+    toggleBtn.addEventListener('click', () => {
+      nav.classList.toggle('nav--visible');
+    });
+  </script>
 </body>
 </html>
