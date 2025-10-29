@@ -26,3 +26,24 @@ function iniciarTimer() {
 
 // Llamar la función para iniciar el temporizador automáticamente
 iniciarTimer();
+// -----------------------------
+// Grupo 3, Ejercicio 2: Cambiar contenido y color al clickear
+// -----------------------------
+
+// Seleccionamos el elemento que queremos modificar
+const tituloBienvenida = document.getElementById("titulo-bienvenida");
+
+// Seleccionamos el botón
+const botonCambiar = document.getElementById("cambiarBtn");
+
+// Agregamos el evento click
+botonCambiar.addEventListener("click", () => {
+  // Cambiamos el texto del título
+  tituloBienvenida.textContent = "¡Gracias por visitar la Tienda de Café!";
+
+  // Cambiamos el color del texto
+  tituloBienvenida.style.color = "#8b5e3c";
+
+  // Mostramos un mensaje en consola
+  console.log("El título y el color fueron modificados.");
+});
