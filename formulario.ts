@@ -1,41 +1,37 @@
-// formulario.ts
-const form = document.querySelector("form") as HTMLFormElement;
+const form = document.querySelector<HTMLFormElement>("form");
 const nombreInput = document.getElementById("nombre") as HTMLInputElement;
 const emailInput = document.getElementById("email") as HTMLInputElement;
+const mensajeInput = document.getElementById("mensaje") as HTMLTextAreaElement;
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault(); // Evita el envío por defecto
+if (form) {
+  form.addEventListener("submit", (e: Event) => {
+    e.preventDefault();
 
-  const nombre = nombreInput.value.trim();
-  const email = emailInput.value.trim();
+    const nombre = nombreInput.value.trim();
+    const email = emailInput.value.trim();
+    const mensaje = mensajeInput.value.trim();
 
-  // Validación básica
-  if (nombre === "") {
-    alert("El nombre no puede estar vacío.");
-    return;
-  }
+    if (!nombre || !email || !mensaje) {
+      alert("⚠️ Por favor, completá todos los campos antes de enviar.");
+      return;
+    }
 
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(email)) {
-    alert("Por favor, ingresá un correo válido.");
-    return;
-  }
+    const datos = { nombre, email, mensaje };
 
-  // Si todo está bien, enviamos los datos al servidor
-  const datos = { nombre, email };
-
-  fetch("http://localhost:3000/enviar", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(datos),
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      console.log("Respuesta del servidor:", data);
-      alert("✅ Datos enviados correctamente.");
-      form.reset();
+    fetch("http://localhost:3000/enviar", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(datos),
     })
-    .catch((error) => console.error("Error al enviar:", error));
-});
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("Respuesta del servidor:", data);
+        alert("✅ Datos enviados correctamente");
+        form.reset();
+      })
+      .catch((err) => {
+        console.error("Error al enviar:", err);
+        alert("❌ Ocurrió un error al enviar los datos");
+      });
+  });
+}

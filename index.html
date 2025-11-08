@@ -17,9 +17,7 @@
     </div>  
 
     <!-- 🔽 Botón menú hamburguesa -->
-    <button class="menu-toggle" aria-label="Abrir menú">
-      ☰
-    </button>
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
 
     <nav class="nav">
       <ul>
@@ -43,7 +41,6 @@
         <h2>SIEMPRE CERCA</h2>
         <p>Blends, varietales, cafés del mundo. <br>Encontrá tu Tienda más cercana y tentate con nuestros sabores.</p>
         <button id="encontranosBtn" class="button">ENCONTRANOS</button>
-        <script src="button.js"></script>
       </div>
     </section>
 
@@ -52,8 +49,8 @@
       <h2>Bienvenido a la Tienda de Café</h2>
       <p>Descubrí nuestros cafés de especialidad.</p>
       <img src="img/diseño-sin-titulo-3.jpg" alt="Taza de café">
-       <!-- 🔽 Nuevo botón -->
-  <button id="cambiarBtn" class="button">Cambiar mensaje</button>
+      <!-- 🔽 Nuevo botón -->
+      <button id="cambiarBtn" class="button">Cambiar mensaje</button>
     </section>
 
     <!-- Sección de productos destacados -->
@@ -75,7 +72,7 @@
     <section class="contacto">
       <h2>Contacto</h2>
       <p>Envianos tu mensaje y te responderemos pronto.</p>
-      <form action="#" method="post">
+      <form>
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
 
@@ -99,16 +96,37 @@
     </div>
   </footer> 
 
-  <!-- Script para el menú -->
+  <!-- 🔹 Scripts -->
   <script>
+    // Menú hamburguesa
     const toggleBtn = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav');
-
     toggleBtn.addEventListener('click', () => {
       nav.classList.toggle('nav--visible');
     });
+
+    // Botones interactivos
+    document.addEventListener("DOMContentLoaded", () => {
+      const btn1 = document.getElementById("encontranosBtn");
+      const btn2 = document.getElementById("cambiarBtn");
+
+      if (btn1) {
+        btn1.addEventListener("click", () => {
+          alert("🌍 Próximamente podrás encontrar tu Tienda de Café más cercana.");
+        });
+      }
+
+      if (btn2) {
+        btn2.addEventListener("click", () => {
+          const titulo = document.querySelector(".bienvenida h2");
+          if (titulo) titulo.textContent = "¡Gracias por visitarnos! ☕";
+        });
+      }
+    });
   </script>
+
   <script src="temporizador.js"></script>
   <script src="formulario.js"></script>
+
 </body>
 </html>
