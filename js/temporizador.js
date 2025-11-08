@@ -1,14 +1,13 @@
-// Mostrar la hora actual o un temporizador en pantalla
-function iniciarTemporizador() {
-  const elemento = document.getElementById("temporizador");
-  if (!elemento) return; // Si no existe el elemento, no hace nada
+console.log("Temporizador iniciado...");
 
-  setInterval(() => {
-    const ahora = new Date();
-    const hora = ahora.toLocaleTimeString();
-    elemento.textContent = `Hora actual: ${hora}`;
-  }, 1000);
-}
+let contador = 0;
+const intervalo = setInterval(() => {
+  console.log(contador);
+  contador++;
 
-// Ejecutar al cargar la página
-document.addEventListener("DOMContentLoaded", iniciarTemporizador);
+  if (contador > 9) {
+    clearInterval(intervalo);
+    console.log("¡Conteo completado! Se ha detenido.");
+  }
+}, 1000);
+
