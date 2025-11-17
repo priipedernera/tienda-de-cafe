@@ -250,7 +250,7 @@ button:hover, .button:hover {
         width: 100%;
     }
 }
-/* === MENÚ HAMBURGUESA RESPONSIVE === */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -264,17 +264,17 @@ button:hover, .button:hover {
   font-size: 1.5rem;
 }
 
-/* Botón hamburguesa */
+
 .menu-toggle {
   background: none;
   border: none;
   font-size: 1.8rem;
   color: white;
   cursor: pointer;
-  display: none; /* se oculta en escritorio */
+  display: none; 
 }
 
-/* Navegación principal */
+
 .nav ul {
   list-style: none;
   display: flex;
@@ -291,10 +291,10 @@ button:hover, .button:hover {
   text-decoration: underline;
 }
 
-/* 🔽 Vista móvil */
+
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block; /* mostrar botón hamburguesa */
+    display: block; 
   }
 
   .nav {
@@ -314,6 +314,6 @@ button:hover, .button:hover {
   }
 
   .nav--visible {
-    display: block; /* se muestra cuando el usuario hace clic */
+    display: block; 
   }
 }
